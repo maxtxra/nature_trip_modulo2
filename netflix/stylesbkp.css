@@ -1,0 +1,323 @@
+:root {
+    --primary-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+    scroll-behavior:smooth;
+  }
+  
+* {
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+    background-image: url('/netflix/imgs/backgrounv2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    border: 2px solid 003C79;
+    
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--primary-font);
+    min-height: 8vh;
+    min-height: 8svh;
+    border: 2px solid #FF0080;
+}
+
+.menu ul {
+    
+    display: flex;
+    flex-direction: row;
+    padding-top: 28px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.menu ul li {
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 528px;
+}
+
+.leftcontent {
+    width: 700px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    height: 260px;
+    padding: 66px 90px 60px 90px;
+    margin-top: 80px;
+}
+
+.description h3 {
+    font-size: 34px;
+    font-family: var(--primary-font);
+}
+
+.description h5 {
+    padding-top: 18px;
+    font-family: var(--primary-font);
+}
+
+.description p {
+    width: 500px;
+    height: 220px;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    position: relative;
+}
+
+.changeepisode {
+    padding-top: 0px;
+    padding-left: 90px;
+    width: 680px;
+    height: 36px;
+    font-family: var(--primary-font);
+}
+
+.episodes ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 90px;
+    width: 680px;
+    height: 146px;
+    align-items: center;
+}
+
+.rightcontent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 470px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100% vh;
+    height: 50px;
+    padding-top: 14px;
+    padding-right: 150px;
+    font-family: var(--primary-font);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.social img {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 36px;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.footer p {
+    padding: 10px 10px 10px 0px;
+}
+
+/* Estilos para resolução 1366x768 */
+@media (max-width: 1366px) {
+
+    .menu{
+        
+    }
+    .menu ul {
+        border: 4px solid green;
+        width: 900px;
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        font-size: 26px;
+    }
+
+    .content {
+        height: 480px;
+    }
+
+    .leftcontent {
+        width: 600px;
+        height: 460px;
+    }
+
+    .description {
+        width: 580px;
+        height: 220px;
+        padding: 50px 70px 50px 70px;
+        margin-top: 60px;
+    }
+
+    .description h3 {
+        font-size: 28px;
+    }
+
+    .description h5 {
+        padding-top: 14px;
+    }
+
+    .description p {
+        width: 420px;
+        height: 180px;
+        padding-top: 16px;
+        font-size: 12px;
+    }
+
+    .changeepisode {
+        padding-left: 70px;
+        width: 580px;
+        height: 30px;
+    }
+
+    .episodes ul {
+        gap: 16px;
+        padding-left: 70px;
+        width: 580px;
+        height: 120px;
+    }
+
+    .rightcontent {
+        margin-top: 40px;
+        width: 270px;
+        height: 400px;
+    }
+
+    .footer {
+        height: 40px;
+        padding-top: 10px;
+        padding-right: 120px;
+    }
+
+    .social {
+        margin-left:320px;
+    }
+
+    .social img {
+        width: 20px;
+        height: 30px;
+        padding-top: 12px;
+    }
+
+    .footer p {
+        padding: 8px 8px 8px 0px;
+    }
+}
+
+/* Estilos para resolução Full HD (1920x1080) */
+@media (min-width: 1920px) {
+    .menu ul {
+        width: 500px;
+    }
+
+    .menu ul li {
+        font-size: 16px;
+    }
+
+    .content {
+        height: 528px;
+    }
+
+    .leftcontent {
+        width: 700px;
+        height: 520px;
+    }
+
+    .description {
+        width: 680px;
+        height: 260px;
+        padding: 66px 90px 60px 90px;
+        margin-top: 80px;
+    }
+
+    .description h3 {
+        font-size: 34px;
+    }
+
+    .description h5 {
+        padding-top: 18px;
+    }
+
+    .description p {
+        width: 500px;
+        height: 220px;
+        padding-top: 20px;
+        font-size: 14px;
+    }
+
+    .changeepisode {
+        padding-left: 90px;
+        width: 680px;
+        height: 36px;
+    }
+
+    .episodes ul {
+        gap: 20px;
+        padding-left: 90px;
+        width: 680px;
+        height: 146px;
+    }
+
+    .rightcontent {
+        margin-top: 50px;
+        width: 320px;
+        height: 470px;
+    }
+
+    .footer {
+        height: 50px;
+        padding-top: 14px;
+        padding-right: 150px;
+    }
+
+    .social {
+        margin-left: 300px;
+    }
+
+    .social img {
+        width: 24px;
+        height: 36px;
+        padding-top: 16px;
+    }
+
+    .footer p {
+        padding: 10px 10px 10px 0px;
+    }
+}
